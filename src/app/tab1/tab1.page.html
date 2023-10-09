@@ -13,16 +13,16 @@
     </ion-toolbar>
   </ion-header>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+  <app-explore-container name="Clique na opção desejada abaixo"></app-explore-container>
 </ion-content>
 
 <ion-card>
   <ion-card-header>
-    <ion-input readonly="true" label="Senha: " value=" ( (inputNovaSenha) | "></ion-input>
+    <ion-input readonly="true" label="Senha: " value=(inputNovaSenha)></ion-input>
   </ion-card-header>
   <ion-card-content>
     <ion-button expand="block" (click)="senhasService.novaSenha ('SG') ">Senha Geral</ion-button>
-    <ion-button expand="block" (click)="senhasService.novaSenha ('SP') ">Senha Prioritária</ion-button)
+    <ion-button expand="block" (click)="senhasService.novaSenha ('SP') ">Senha Prioritária</ion-button>
     <ion-button expand="block" (click)="senhasService.novaSenha ('SE') ">Senha Exame</ion-button>
   </ion-card-content>
 </ion-card>
